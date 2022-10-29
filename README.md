@@ -1,10 +1,10 @@
-Project Title: Predicting Student Success on the California ELPAC Summative Assessment
+# Project Title: Predicting Student Success on the California ELPAC Summative Assessment
 
 This project is a part of the ADS-599B course in the Applied Data Science Program at the University of San Diego.
 
 --Project Status:[Active]
 
-Installation:
+## Installation:
 To use this project, first clone the repo on your device using the command below:
 
 git init
@@ -13,28 +13,28 @@ git clone https://github.com/OscarG-DataSci/ADS-599B.git
 
 Please note, the 1_Deidentify.ipynb script was used to produce the master file Deidentified/elpac.csv. This file is unnecessary to run after you clone the repository.
 
-Project Intro/Objective
+## Project Intro/Objective
 The main purpose of this project is to identify data elements, assisting in the prediction of student success in the ELPAC Summative Assessment, for a school district in California.
 We intend to create an application, for end users to enter data so that our machine learning model produces a predictive result.
 
-Partners/Contributors:
-Team 3 Members:
-Emma Oo
-Luke Awino
-Oscar Gil
+## Partners/Contributors:
+### Team 3 Members:
+- Emma Oo
+- Luke Awino
+- Oscar Gil
 
-Methods Used
+## Methods Used
 - Data Visualization
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
 - Machine Learning
 
-Technologies:
+## Technologies:
 - Python
 - SQL
 - R
 
-Project Description
+## Project Description
 The file used for this project, elpac.csv, was created from several different sources; they are:
 
 Attendance information, comes from the California Longitudinal Pupil Achievement Data System (CALPADS), Student Attendance Summary (STAS) files, 
