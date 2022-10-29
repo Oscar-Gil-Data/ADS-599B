@@ -1,4 +1,4 @@
-# Project Title: Predicting Student Success on the California ELPAC Summative Assessment
+## Predicting Student Success on the California ELPAC Summative Assessment
 
 This project is a part of the ADS-599B course in the Applied Data Science Program at the University of San Diego.
 
