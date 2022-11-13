@@ -1,0 +1,80 @@
+---
+title: "R Decision Tree for ELPAC Data"
+author: "Oscar Gil"
+date: "11/13/2022"
+output:
+  pdf_document:
+    latex_engine: xelatex
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r Load Libraries, warning=FALSE,message=FALSE}
+# R Libraries
+library(caret)
+library(AppliedPredictiveModeling)
+#library(Hmisc)
+library(dplyr)
+library(tidyverse)
+library(ggplot2)
+library(corrplot)
+library(MASS)
+library(ISLR)
+library(rpart)
+library(partykit)
+library(randomForestSRC)
+library(earth)
+library(MARSS)
+library(e1071)
+library(summarytools)
+library(grid)
+library(MLeval)
+library(pROC)
+```
+
+## Load the ELPAC data set from GitHub
+```{r Load Data, warning=FALSE,message=FALSE, fig.height= 4, fig.width= 6}
+df <- read.csv(
+  url("https://raw.githubusercontent.com/OscarG-DataSci/ADS-599B/main/Data%20Folder/elpac.csv")
+                      , header = TRUE)
+```
+```
+```
+## Data Summary
+```{r Data Summary, results="asis", warning=FALSE, message=FALSE}
+# use the view function to view in R Studio
+#view(
+dfSummary(df,
+          plain.ascii  = FALSE,
+          style        = "grid",
+          graph.magnif = 0.75,
+          valid.col    = FALSE,
+          tmp.img.dir  = "NA")
+#    )
+```
+```
+```
+## Decision Tree
+```{r Pre-Procssing, warning=FALSE,message=FALSE, fig.height= 4, fig.width= 6}
+# Convert target variable to factor to ensure proper interpretation by model
+#rf_wine_train$quality <- as.factor(rf_wine_train$quality)
+
+# Begin model...
+rPartTree <- rpart(OverallLevel ~ ., data = df)
+
+rpartTree2 <- as.party(rPartTree)
+
+# R-Squared plot
+par(mfrow=c(1,2))
+rsq.rpart(rPartTree)
+
+# Results
+rpartTree2
+
+plot(rpartTree2, gp = gpar(fontsize=4))
+```
+```
