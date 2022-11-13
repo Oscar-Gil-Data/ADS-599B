@@ -1,6 +1,6 @@
 ---
 title: "R Decision Tree for ELPAC Data"
-author: "Oscar Gil"
+author: "Team 3 - Emma Oo, Luke Awino, Oscar Gil"
 date: "11/13/2022"
 output:
   pdf_document:
@@ -39,7 +39,7 @@ library(pROC)
 ## Load the ELPAC data set from GitHub
 ```{r Load Data, warning=FALSE,message=FALSE, fig.height= 4, fig.width= 6}
 df <- read.csv(
-  url("https://raw.githubusercontent.com/OscarG-DataSci/ADS-599B/main/Data%20Folder/elpac.csv")
+  url("https://raw.githubusercontent.com/OscarG-DataSci/ADS-599B/main/Data%20Folder/new_elpac.csv")
                       , header = TRUE)
 ```
 ```
@@ -67,10 +67,6 @@ dfSummary(df,
 rPartTree <- rpart(OverallLevel ~ ., data = df)
 
 rpartTree2 <- as.party(rPartTree)
-
-# R-Squared plot
-par(mfrow=c(1,2))
-rsq.rpart(rPartTree)
 
 # Results
 rpartTree2
