@@ -60,11 +60,14 @@ dfSummary(df,
 ```
 ## Decision Tree
 ```{r Pre-Procssing, warning=FALSE,message=FALSE, fig.height= 4, fig.width= 6}
-# Convert target variable to factor to ensure proper interpretation by model
-#rf_wine_train$quality <- as.factor(rf_wine_train$quality)
+# get column names and their number
+colnames(df)
+
+#subset, remove unnecessary columns
+df2 <- df[-c(9, 11, 13, 14)]
 
 # Begin model...
-rPartTree <- rpart(OverallLevel ~ ., data = df)
+rPartTree <- rpart(OverallLevel ~ ., data = df2)
 
 rpartTree2 <- as.party(rPartTree)
 
