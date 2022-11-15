@@ -1,6 +1,6 @@
 /Raw_Files
 /NA
 .DS_Store
-**/.DS_Store
+.DS_Store?
 .Rhistory
-**/.Rhistory
+.Rhistory?
