@@ -1,4 +1,4 @@
 /Raw_Files
 /NA
-.DS_Store
-.Rhistory
+*DS_Store*
+*Rhistory*
