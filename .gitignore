@@ -1,3 +1,6 @@
 /Raw_Files
 /NA
-/blob
+.DS_Store
+**/.DS_Store
+.Rhistory
+**/.Rhistory
