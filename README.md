@@ -47,7 +47,7 @@ Student demographic and Teacher information, was obtained from CALPADS reports 8
 Student and School data is de-identified, per request of the school district that gave us permission to use their data.
 
 ## Streamlit Webapp 
-For end user application for prediction of ELPAC score leve, the webapp can be accessed at the following link:
+For end user application for prediction of ELPAC score level, the Streamlit webapp can be accessed at the following link:
 
 https://emmacoo-capstone-elpac-prediction-elpac-app-yyp773.streamlit.app/
 
