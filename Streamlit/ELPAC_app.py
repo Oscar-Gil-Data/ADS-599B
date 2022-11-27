@@ -54,7 +54,7 @@ DaysAttended = st.number_input('Enter Days Attended')
 # If button is pressed
 if st.button("Predict"):
     
-    model = joblib.load('ELPAC_model.pkl')
+    model = joblib.load('/app/ads-599b/Streamlit/ELPAC_model.pkl')
     
     #Store inputs into dataframe
     X = pd.DataFrame([[School_deID, GradeLevel, StudentGender, StudentEthnicity, Special_Education, Homeless,
