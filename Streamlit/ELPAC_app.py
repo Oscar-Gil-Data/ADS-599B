@@ -27,7 +27,7 @@ In addtion, the app will also generate the probability of the predicted Level.
 # Dropdown input
 School_deID = st.selectbox("Select Your School ID", ('0','1','2','3','4','5','6','7','8','9'))
 
-GradeLevel = st.selectbox('Select Grade Level',('0','1','2','3','4','5','6'))
+GradeLevel = st.selectbox('Select Grade Level (0 = KN)',('0','1','2','3','4','5','6'))
 
 StudentGender = st.selectbox('Select Student Gender',('Female','Male'))
 
@@ -70,7 +70,6 @@ if st.button("Predict"):
     X = X.replace(['No','Yes'], [0,1])
     X = X.replace(['Friday','Monday','Saturday','Sunday','Thursday','Tuesday','Wednesday'],
                   [0,1,2,3,4,5,6])
-    X = X.replace([0,1,2,3,4,5,6],['KN', '1st', '2nd', '3rd', '4th', '5th', '6th'])
 
   
     # Get prediction
