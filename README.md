@@ -49,6 +49,6 @@ Student and School data is de-identified, per request of the school district tha
 ## Streamlit Webapp 
 For end user application for prediction of ELPAC score level, the Streamlit webapp can be accessed at the following link:
 
-<a href="https://oscarg-datasci-ads-599b-streamlitelpac-app-obqftk.streamlit.app/">Prediction of ELPAC Levels App<a>
+<a href="https://oscarg-datasci-ads-599b-streamlitelpac-app-obqftk.streamlit.app/" target="_blank">Prediction of ELPAC Levels App<a>
 
 
