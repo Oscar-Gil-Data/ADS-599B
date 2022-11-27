@@ -70,8 +70,7 @@ if st.button("Predict"):
     X = X.replace(['No','Yes'], [0,1])
     X = X.replace(['Friday','Monday','Saturday','Sunday','Thursday','Tuesday','Wednesday'],
                   [0,1,2,3,4,5,6])
-    X = X.replace(['KN', '1st', '2nd', '3rd', '4th', '5th', '6th'],
-                  [0,1,2,3,4,5,6])
+    X = X.replace([0,1,2,3,4,5,6],['KN', '1st', '2nd', '3rd', '4th', '5th', '6th'])
 
   
     # Get prediction
