@@ -43,7 +43,7 @@ SocioEconomically = st.selectbox('Select If Student Is SocioEconomically',('Yes'
 
 TestDayName = st.selectbox('Select Test Day',('Monday','Tuesday','Wednesday', 'Thursday', 'Friday', 'Saturday','Sunday'))
 
-OverallScore = st.number_input('Enter OverallScore (1150 to 1900')
+OverallScore = st.number_input('Enter OverallScore (1150 to 1900)')
 
 ExpectedAttendanceDays = st.number_input('Enter Expected Attendance Days (max 180)')
 
@@ -70,7 +70,7 @@ if st.button("Predict"):
     X = X.replace(['No','Yes'], [0,1])
     X = X.replace(['Friday','Monday','Saturday','Sunday','Thursday','Tuesday','Wednesday'],
                   [0,1,2,3,4,5,6])
-    X = X.replace(['Kindergarten', '1st', '2nd', '3rd', '4th', '5th', '6th'],
+    X = X.replace(['KN', '1st', '2nd', '3rd', '4th', '5th', '6th'],
                   [0,1,2,3,4,5,6])
 
   
