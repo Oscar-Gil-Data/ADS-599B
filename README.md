@@ -32,7 +32,6 @@ We intend to create an application, for end users to enter data so that our mach
 ## Technologies:
 - Python
 - SQL
-- R
 
 ## Project Description
 The file used for this project, elpac.csv, was created from several different sources; they are:
