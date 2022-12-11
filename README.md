@@ -8,7 +8,6 @@ This project is a part of the ADS-599B course in the Applied Data Science Progra
 - Luke Awino
 - Oscar Gil
 
---Project Status:[Active]
 
 ## Installation:
 To use this project, first clone the repo on your device using the command below:
