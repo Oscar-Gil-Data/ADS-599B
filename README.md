@@ -31,7 +31,7 @@ Level 2: Somewhat developed
 Level 1: Minimally developed
 
 ## Project Intro/Objective
-With the hypothesis that students with poor attendance are less likely to do well on ELPAC summative assessment, the main purpose of this project is to identify data elements, assisting in the prediction of student success in the ELPAC Summative Assessment, for a school district in California.
+With the hypothesis that students with poor attendance are less likely to do well on ELPAC summative assessment, the main purpose of this project is to predict the student ELPAC level for a school district in California.
 
 In addition, we intend to create an application, for end users to enter data so that our machine learning model produces a predictive result.
 
