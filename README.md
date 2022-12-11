@@ -17,7 +17,7 @@ git init
 
 git clone https://github.com/OscarG-DataSci/ADS-599B.git
 
-Please note, the 1_Deidentify.ipynb script was used to produce the master file Deidentified/elpac.csv. This file is unnecessary to run after you clone the repository.
+Please note, the TEAM3_CAPSTONE_DATA_ACQUISITION&DE_IDENTIFIED.ipynb script was used to produce the master file Deidentified/elpac.csv. This file is unnecessary to run after you clone the repository.
 
 ## Background
 The ELPAC test, given to students whose primary language is not English, is used to measure proficiency of the English language from kindergarten (K) to Grade 12 (California Department of Educa-tion, 2022). There are initial ELPAC and summative ELPAC assessments. Initial ELPAC identifies whether students are English learners or ones fluent in English. The summative ELPAC assesses the progress of English learners in listening, speaking, writing, and reading in English. English learner students are given the ELPAC test every year. The test scores are classified into Level 1, 2, 3, and 4. Once the students score Level 4, they are reclassified as fluent English proficient (California Department of Education, 2022). The levels are broken down as:
@@ -61,7 +61,7 @@ for five school years, 2017-2018, through 2021-2022.
 ## Feature Engineering
 The following features were engineered.
 * TestDayName, TestAge, AttendedPct, EnrolledPct, GradeEnrolledPct, GradeAttendedPct, OverallScoreStd, TotalAssessments, TestInstance, and Growth. 
-* Label-encoding: Laben-encoding was performed for the categorical variables, StudentGender, StudentEthnicity, Special_Education, Homeless, SocioEconomically, TestDayName, TeacherGender, and TeacherEthnicity.
+* Label-encoding: Label-encoding was performed for the categorical variables, StudentGender, StudentEthnicity, Special_Education, Homeless, SocioEconomically, TestDayName, TeacherGender, and TeacherEthnicity.
 
 ## Modeling
 After the data set was balanced with upsamling, the following algorithms were trained on 70% train dataset and tested on 30% test dataset.
