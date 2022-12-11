@@ -60,8 +60,8 @@ for five school years, 2017-2018, through 2021-2022.
 
 ## Feature Engineering
 The following features were engineered.
-* TestDayName, TestAge, AttendedPct, EnrolledPct, GradeEnrolledPct, GradeAttendedPct, OverallScoreStd,TotalAssessments, TestInstance, and Growth. 
-* Label-encoding: Laben-encoding was performed for the categorical variables, Stu- dentGender, StudentEthnicity, Special_Education, Homeless, SocioEconom- ically,TestDayName, TeacherGender, and TeacherEthnicity.
+* TestDayName, TestAge, AttendedPct, EnrolledPct, GradeEnrolledPct, GradeAttendedPct, OverallScoreStd, TotalAssessments, TestInstance, and Growth. 
+* Label-encoding: Laben-encoding was performed for the categorical variables, StudentGender, StudentEthnicity, Special_Education, Homeless, SocioEconomically, TestDayName, TeacherGender, and TeacherEthnicity.
 
 ## Modeling
 After the data set was balanced with upsamling, the following algorithms were trained on 70% train dataset and tested on 30% test dataset.
